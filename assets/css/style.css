@@ -36,7 +36,7 @@ button {
     display: inline;
 }
 
-p, li, #rightAnswer, #wrongAnswer{
+p, li, #rightAnswerMessage, #wrongAnswerMessage{
     line-height: 1.25;
     font-weight: bold;
     font-size: 110%;
