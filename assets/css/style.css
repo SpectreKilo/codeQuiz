@@ -28,9 +28,8 @@ color: white;
 
 button {
     display: block;
-    margin: 10px 15px;
-    border-radius: 15px;
-    margin: 0px 10px;
+    margin: 15px 15px;
+    border-radius: 10px;
     font-size: large;
     width: 20%;
 }
@@ -55,3 +54,4 @@ button:hover {
     color: aquamarine;
     background-color: azure;
 }
+
