@@ -81,7 +81,43 @@ function setTimer() {
             questions.style.display = "none"
             scoreScreen.style.display = "block";
             finalScore.textContent = "Total points: " + score;
-            
+            function addHighScore() {
+                var initials = document.getElementById("playerInitials").value;
+                var node = document.createElement("li");
+                var textnode = document.createTextNode(initials + " " + score + " points") ;
+                node.appendChild(textnode);
+                document.getElementById("playerScoreAndID").appendChild(node);
+                localStorage.setItem("High Score ", score);
+                localStorage.setItem("Player: ", initials);
+            }
+            submitButton.addEventListener("click", addHighScore);
         }
-    })
+    }, 1000);
+}
+function verifyAnswer() {
+    console.log("Correct Answer: ", questionList[questionIndex].rightAnswer);
+    console.log("You chose: ", this);
+    console.log(this.textContent);
+    if(questionList[questionIndex].rightAnswer === this.textContent){
+        score += 20;
+        console.log(score);
+        var correctTimeout = setTimeout(
+            rightAnswerMessage.textContent = "Correct!", 1000);
+            clearTimeout(correctTimeout);
+    } else {
+        secondsLeft -= 10;
+        rightAnswerMessage.textContent = "Wrong, 10 seconds removed from the remaining time!"
+    }
+    if (questionIndex === questionList.length -1) {
+        questionHeader.style.display = "none";
+        scoreScreen.style.display = "block";
+        finalScore.textContent = "Total points: " + score;
+        return;
+    } else {
+        activeQuestion = questionList[questionIndex += 1];
+        showQuestion();
+    }
+}
+function showQuestion() {
+    
 }
