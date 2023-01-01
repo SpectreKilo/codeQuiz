@@ -68,6 +68,7 @@ var questionList = [
 ];
 
 var activeQuestion = questionList[questionIndex];
+
 startQuizButton.addEventListener("Click", advancePage);
 questions.style.display = "none";
 scoreScreen.style.display = "none";
@@ -119,5 +120,26 @@ function verifyAnswer() {
     }
 }
 function showQuestion() {
-    
+    activeQuestion.heading
+    console.log(activeQuestion.heading);
+    questionHeader.textContent = activeQuestion.heading;
+    console.log(activeQuestion.choice1, activeQuestion.choice2, activeQuestion.choice3, activeQuestion.choice4);
+    answer1.textContent = activeQuestion.option1;
+    answer2.textContent = activeQuestion.option2;
+    answer3.textContent = activeQuestion.option3;
+    answer4.textContent = activeQuestion.option4;
+
+    answer1.addEventListener("click", verifyAnswer);
+    answer2.addEventListener("click", verifyAnswer);
+    answer3.addEventListener("click", verifyAnswer);
+    answer4.addEventListener("click", verifyAnswer);
+    console.log(secondsLeft + " seconds left");
+    console.log("you are on question #" + (questionIndex +1))
+};
+function advancePage() {
+    console.log("click")
+    startQuiz.style.display = "none";
+    questions.style.display = "block";
+    showQuestion();
+    setTimer();
 }
