@@ -6,6 +6,10 @@
     border-color: blue;
 }
 
+body {
+    background-color: beige;
+}
+
 h1 {
 font-size: 350%;
 color: white;
@@ -24,6 +28,10 @@ color: white;
 button {
     display: block;
     margin: 10px 15px;
+    border-radius: 15px;
+    margin: 0px 10px;
+    font-size: large;
+    width: 20%;
 }
 
 #questions { 
