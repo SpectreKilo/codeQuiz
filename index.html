@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+
     <div id="startQuiz" class="card"><h1>Code Quiz!</h1>
         <p>
             Answer these 5 questions in less than 60 seconds! <br>
@@ -27,10 +28,14 @@
             <button id="answer4"></button>
             <h3 id=remainingTime></h3>
     </div>
-    <div id="score" class="card">
+
+    <div id="scoreScreen" class="card">
         <h3> Your total score is:</h3>
         <h4 id="finalScore"></h4>
-        
+        <label>Enter Your Initials:</label>
+        <input id="playerInitials" placeholder="Enter Initials Here" type="text" onfocus="this.value=''">
+        <button type="button" id="submitButton"> Add Your Score</button>
+        <ul id="playerScoreAndID"></ul>
     </div>
 
 <script src="./assets/javascript/script.js"></script>

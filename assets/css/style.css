@@ -12,11 +12,22 @@ color: white;
 }
 
 h2 {
-
+font-size: 275%;
+color: white;
 }
 
 h3 {
+font-size: 200%;
+color: white;
+}
 
+button {
+    display: block;
+    margin: 10px 15px;
+}
+
+#questions { 
+    display: flex;
 }
 
 
