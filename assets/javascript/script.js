@@ -68,8 +68,8 @@ var questionList = [
 ];
 
 var activeQuestion = questionList[questionIndex];
-
-startQuizButton.addEventListener("Click", advancePage);
+// Spent 30 minutes wondering why the button wouldn't work and it was bcuz I had typed "Click" instead of "click" in the event listener ( ._.)
+startQuizButton.addEventListener("click", advancePage);
 questions.style.display = "none";
 scoreScreen.style.display = "none";
 
