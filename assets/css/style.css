@@ -18,3 +18,20 @@ h2 {
 h3 {
 
 }
+
+
+
+#startQuizButton, #submitButton {
+    display: inline;
+}
+
+p, li, #rightAnswer, #wrongAnswer{
+    line-height: 1.25;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+button:hover {
+    color: aquamarine;
+    background-color: azure;
+}
