@@ -1,13 +1,14 @@
 .card {
     background-color: lightblue;
     text-align: center;
-    padding: 20px 80px 30px 80px;
+    padding: 20px 80px 50px 80px;
     border: dashed;
     border-color: blue;
 }
 
 body {
     background-color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
