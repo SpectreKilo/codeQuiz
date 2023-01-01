@@ -1,3 +1,4 @@
+//Global Variables
 var score = 0
 var highScore = localStorage.getItem("High Score");
 var initials = localStorage.getItem("Player: ");
